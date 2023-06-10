@@ -1,0 +1,501 @@
+table { border-collapse:collapse; border:0 }
+#main_tabs, #paraInf { padding:0 }
+
+td,th,div {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:12px
+}
+
+a, #treeRep a:hover, #replicon_tbl a:hover, #conTitle a:hover { text-decoration:none }
+a:hover { text-decoration:underline }
+
+#help {
+    float:right;
+    margin-right:18px;
+    font-weight:bold;
+    color:#d7e4f1;
+    font-size:12px
+}
+
+#contactus {
+    background-color:#83a3ae;
+	padding-top:3px;
+    padding-bottom:3px;
+    text-align:center;
+    font-size:12px;
+    color:#d7e4f1
+}
+#contactus a {
+    color:#d7e4f1;
+    font-weight:bold;
+    text-decoration:underline
+}
+#contactus a:hover { color:#ecd87d }
+
+.hidden, #lgScale span { display:none }
+
+.info {
+    background-color:#FFC;
+    border:outset 2px;
+    position:absolute;
+    padding:3px 5px;
+    text-align:left
+}
+#info0 { top:38px; right:20px; color:black }
+#info1 { bottom:70px; left:507px; width:380px; color:black; line-height:18px; padding:7px 5px 0 10px }
+#info1 ul {margin-top:2px}
+#info1 span { color:#999 }
+
+#strainTree text {font-size:11.5px}
+
+.finger, #ospInf td:nth-of-type(2) { cursor:pointer}
+
+#newsPara {
+    width:207px;
+    top:82px;
+    z-index:501
+}
+
+#newsBlast { top:45px; left:220px }
+#infoBlast { top:170px; left:30px; z-index:200 }
+
+#tabStrain { padding:0; min-height:575px }
+#tabReplicon {
+    border:0;
+    padding:5px 1px 0px 2px
+}
+#repInstr {position:absolute; left:730px; top:48px; line-height:22px}
+#legORF {position:absolute; left:725px; top:10px}
+#treeRep { padding-right:0 }
+#tabTrans { padding:2px 5px 4px 5px; min-height:569px }
+#tabParalog { padding:14px 3px 4px 5px }
+#tabBlast { padding:14px 4px 4px 6px }
+#tabParalog, #tabBlast { min-height:557px }
+
+.firstRow { border-bottom:#CCC thin solid }
+
+#selectNtAa {
+	position:absolute;
+    top:5px; right:40px;
+    background-color:#eee;
+    color:#666; font-size:11px;
+    display:none
+}
+.opc0{ opacity:0}
+
+#btnShowSeq {
+	position:absolute;
+    border-radius:2px;
+	box-shadow:2px 2px 2px rgba(0, 0, 0, 0.3);
+	border:lightgray thin solid;
+    padding:3px 6px;
+    font-size:13px;
+    left:260px; top:52px
+}
+
+.strain_title {
+    text-anchor:middle;
+    font-weight:bold
+}
+#replicon_tbl { border-left:solid 1px white }
+
+#searchPara {width:90px; padding-left:33px; padding-bottom:6px; font-size:14px; font-weight:bold}
+.paraAnno a, #tabBlast a, #svgTrans th a, #ospInf a { color:#36c }
+
+.ita, #paraName td:nth-of-type(3) { font-style:italic }
+
+#replicon_tbl text { fill:#38c; text-anchor:middle; font-size:26px }
+
+.darkorange { fill:darkorange !important }
+#conTitle a:hover {fill:darkorange}
+.magenta { fill:magenta !important }
+
+.step, #btnShowSeq { color:#999; font-weight:bold }
+.fontBold { font-weight:bold; fill:#999}
+
+#synteny, #topScr, #seqP {
+    overflow-x:scroll;
+    overflow-y:hidden;
+    overflow:auto;
+    position:relative
+}
+#topScr{margin-top:32px; height:20px}
+#topS{border:white thin solid}
+#synteny text { font-size:10px; text-anchor:middle }
+
+.tip {
+    position:absolute;
+    padding:1px 5px 2px 5px;
+    border-radius:4px;
+    white-space:nowrap
+}
+.tooltip {
+  background-color:rgba(0, 0, 0, 0.6);
+  color:#ffffff
+}
+#replicontip { margin-top:106px }
+
+#annoP, #alignP { padding:6px }
+
+.orth1 {color:SteelBlue; fill:SteelBlue}
+.orth2 {color:Chocolate; fill:Chocolate}
+.orth3 {color:Purple; fill:purple}
+.orth4 {color:Blue; fill:blue}
+.orth5 {color:#079807; fill:#079807}
+.orth6 {color:BlueViolet; fill:blueviolet}
+.orth7 {color:Turquoise; fill:turquoise}
+.orth8 {color:Salmon; fill:salmon}
+.orth9 {color:Fuchsia; fill:fuchsia}
+.orth10 {color:YellowGreen; fill:yellowgreen}
+.orth11 {color:Teal; fill:teal}
+.orth12 {color:Tan; fill:tan}
+.orth13 {color:SpringGreen; fill:springgreen}
+.orth14 {color:Gold; fill:gold}
+.orth15 {color:Red; fill:red}
+.orth16 {color:Olive; fill:olive}
+.orth17 {color:hotpink; fill:hotpink}
+.orth18 {color:cornflowerblue; fill:cornflowerblue}
+.orth19 {color:deepskyblue; fill:deepskyblue}
+.orth20 {color:green; fill:green}
+.orth21 {color:deeppink; fill:deeppink}
+.orth22 {color:coral; fill:coral}
+.orth23 {color:mediumpurple; fill:mediumpurple}
+.orth24 {color:burlywood; fill:burlywood}
+.orth25 {color:brown; fill:brown}
+.orth26 {color:forestgreen; fill:forestgreen}
+.orth27 {color:darkgoldenrod; fill:darkgoldenrod}
+.orth28 {color:darkolivegreen; fill:darkolivegreen}
+.orth29 {color:darkred; fill:darkred}
+.orth30 {color:darkorange; fill:darkorange}
+.orth31 {color:cadetblue; fill:cadetblue}
+.orth32 {color:darkblue; fill:darkblue}
+.orth33 {color:darkmagenta; fill:darkmagenta}
+
+.cid1 {fill:#d92400; stroke:#d92400; color:#d92400}
+.cid4 {fill:#d96c00; stroke:#d96c00; color:#d96c00}
+.cid7 {fill:#d9a300; stroke:#d9a300; color:#d9a300}
+.cid10 {fill:#d9c700; stroke:#d9c700; color:#d9c700}
+.cid13 {fill:#c7d900; stroke:#c7d900; color:#c7d900}
+.cid16 {fill:#90d900; stroke:#90d900; color:#90d900}
+
+.cid2 {fill:#24d900; stroke:#24d900; color:#24d900}
+.cid5 {fill:#00d9b5; stroke:#00d9b5; color:#00d9b5}
+.cid8 {fill:#00bfd9; stroke:#00bfd9; color:#00bfd9}
+.cid11 {fill:#0098d9; stroke:#0098d9; color:#0098d9}
+.cid14 {fill:#006cd9; stroke:#006cd9; color:#006cd9}
+.cid17 {fill:#003dd9; stroke:#003dd9; color:#003dd9}
+
+.cid3 {fill:#5300d9; stroke:#5300d9; color:#5300d9}
+.cid6 {fill:#7700d9; stroke:#7700d9; color:#7700d9}
+.cid9 {fill:#9b00d9; stroke:#9b00d9; color:#9b00d9}
+.cid12 {fill:#bf00d9; stroke:#bf00d9; color:#bf00d9}
+.cid15 {fill:#d900a3; stroke:#d900a3; color:#d900a3}
+
+.fillLess { fill-opacity:0.25 }
+
+.ciduv {fill:lightgray; stroke:#bbb}
+.cidna {stroke:#bbb}
+.dotStroke {stroke-dasharray:4,1}
+
+.tick { stroke:#ababab }
+.tickSeq { color:#ababab }
+.mark, .xaxis text, #thumbnail text { fill:#ababab }
+.xaxis path, .xaxis line, #lgScale line { fill:none; stroke:#999; shape-rendering:crispEdges }
+.xaxis text { font-size:10px; stroke:none }
+
+#thumbnail { float:left; padding-right:5px }
+.tnStroke { stroke:#bbb; fill:none }
+#thumbnail text { text-anchor:middle; font-size:11px }
+
+#legClick { position:absolute; right:25px; top:15px; font-size:11px}
+#legORF svg, #legSig svg { border:0.5px solid; background-color:white}
+.oidLeg {fill:orange; stroke:orange}
+
+.shade { fill:none; stroke:#4CC6FF}
+
+#seqPara text {font-size:11px}
+#seqNt, #seqAA {font-family:Courier}
+/*#seqNt { letter-spacing:0.5px }
+#seqAA { letter-spacing:13.5px }*/
+
+.codenBg { fill:rgb(247,247,247) }
+#seqPara .mark, #strainTree .color999 { text-anchor:end }
+
+#paraName { margin-right:5px }
+#paraName tr:nth-of-type(even) { background:rgb(240,240,240) }
+#paraName td { font-size:11px; padding:0 6px 0 4px; white-space:nowrap }
+#paraName a { color: inherit }
+#dbl_click, #pfamId, #legSig { text-align:center }
+
+#treeRep text { font-size:10px }
+#svgTrans, #tabOspc { position:relative }
+
+.green {fill:green}
+.blue {fill:blue}
+.red {fill:red}
+
+.guide {
+    background-color:rgba(256,180,180,0.4);
+    position:absolute
+}
+.guideH {
+    left:0;
+    height:14px
+}
+#gdVp {
+    width:18px;
+    height:100%;
+    top:0
+}
+
+.guideline { stroke:red }
+
+.guideMark {
+    position:absolute;
+    height:20px;
+	font-size:10px;
+    white-space:nowrap
+}
+
+.orfGroup { fill:orange; fill-opacity:0.5 }
+.igsGroup { fill:#4da64d }
+.exGroup { fill:gray; fill-opacity:0.7 }
+.ncGroup { fill:rgb(125,125,255); fill-opacity:0.7 }
+.orfPara { fill:orange }
+
+.pheno { fill:gray }
+
+.nc {
+    position:absolute;
+	height:100%;
+    background-color:rgba(125,125,255,0.2)
+}
+
+
+#sub_tabs, #nameP { padding:0; position:relative }
+
+.paraAnno, #blastRes>div, #ospc_blast {
+	background-color:#eee;
+    width:100%;
+	box-shadow:1px 1px 3px rgba(0, 0, 0, 0.4);
+    border-radius:2px;
+}
+.paraAnno th { padding-top:5px; padding-bottom:2px }
+.paraAnno tr:last-child td { padding-bottom:5px }
+.paraAnno td { vertical-align:top; padding:2px 4px }
+.paraAnno td:nth-of-type(1) { padding-left:7px }
+#tigr td:nth-of-type(2), #pubmed td:nth-of-type(2), #patric td:nth-of-type(3), #pfam td:nth-of-type(3) { padding-right:7px }
+
+#map {
+    margin-left:22px;
+    margin-top:10px;
+	box-shadow:1px 1px 3px rgba(0, 0, 0, 0.4);
+    border-radius:2px;
+    background-color:#efefef
+}
+#mapBack {fill:#efefef; /*stroke:blue*/}
+.country {fill:lightgray; stroke:white; stroke-width:0.5px}
+.country_sel {fill:lightblue}
+/*.geodot {fill:red}*/
+
+#tigr, #patric, #pubmed { margin-top:9px }
+#patric td:nth-of-type(2), #pfam td:nth-of-type(2) { padding:3px 2px 2px 1px }
+#patric td:nth-of-type(1), #pfamId { width:125px }
+.vr { width:0; height:14px; border:white 2px solid; border-left:1px solid #c1c1c1}
+hr { border-color:white; border-top:1px solid #c1c1c1 }
+
+#seqSel {padding-bottom:9px; text-align:center}
+#seqDown {
+    padding-top:9px;
+    border-top:#ababab thin solid;
+    font-family:Courier;
+    display: inline-block;
+    word-wrap:break-word
+}
+
+#tabBlast td { vertical-align:top }
+.secondCol { height:30px }
+#sequence {
+    width:650px; height:80px;
+    font-size:10px;
+    line-height:14px;
+    margin-bottom:10px
+}
+#blastRes>div { margin-top:10px; margin-bottom:20px; padding-bottom:5px }
+#blastRes p { padding-top:12px; padding-bottom:3px; margin-top:2px; margin-bottom:4px }
+#blastRes p span { margin-left:48px }
+#blastRes td {
+    padding-right:1px;
+    padding-left:5px;
+    font-size:11px;
+    line-height:16px
+}
+.blastSeqArea {
+    overflow-x:auto;
+    width:710px;
+    white-space:nowrap;
+    font-family:Courier
+}
+.blastSeq, #seqP { background-color:white }
+
+.blastThumb text { font-size:10px; text-anchor:middle }
+.blastLine { stroke-width:2px }
+.blastMatch { stroke:orange }
+.blastUnmatch { stroke:#b5b5b5 }
+.blastOrf { fill:#8ed8f8 }
+
+#ack { position:absolute; left:348px; bottom:3px; font-size:11px; color:gray; z-index:300 }
+#ack a { color:gray; text-decoration:underline }
+
+#svgTrans {margin-top:5px }
+#svgTrans th {
+    text-align:center;
+    font-weight:bold;
+    padding-bottom:3px;
+    border-bottom:gray thin solid
+}
+
+#transLocus { padding-top: 12px; padding-left:8px; vertical-align:top; width:75px; padding-bottom:0 }
+#transLocus p { line-height:8px; margin-bottom:0 }
+
+.transbarSig { stroke-width:4px; stroke:pink }
+.transbarNo { stroke-width:4px; stroke:lightgray }
+.bg_trans { fill:#f3f3f3 }
+.transBar .xaxis line, .transBar .xaxis path, #replicon_tbl line { stroke:white}
+.spacer { min-width:10px }
+#guidelineT_area { position:absolute; top:60px; left:85px }
+.zeroline { stroke:#dbdbdb }
+
+.divPls { height:14px }
+.whiteFill { fill:white }
+
+#lgScale { color:#999; font-size:11px }
+#lgScale svg { width:42px; height:10px }
+
+.blackLine { fill:none; stroke:black }
+.grayLine {stroke:lightgray}
+
+.link-extensions{ stroke:lightgray; stroke-dasharray:4,2 }
+
+.pieStrain {fill:#e8e8e8}
+.pieSpc {opacity:0.35}
+.whiteStroke {stroke:white}
+.yellowBack {fill:yellow !important}
+
+.midAnchor {text-anchor:middle}
+#straintip table {margin:3px}
+#straintip td:nth-of-type(2){ padding-left:6px }
+
+.divLeg, .grpName {font-size:11px}
+.strainLg { margin-left:63px }
+.strainLg p { margin-bottom:8px; margin-top:12px }
+#lgArea { margin-top:34px }
+#lgSpc { margin-top:52px }
+.color999 { fill:#999; color:#999 }
+.font10 { font-size:10px}
+
+#show-length, #show-length2 { position:absolute; left:15px }
+#show-length { top:57px; left:15px }
+#show-length2 { top:485px; left:50px }
+
+.arcGrp path:nth-of-type(odd) {opacity:0.25}
+.arcGrp path:nth-of-type(even) {opacity:0.4}
+.arcGrp text {text-anchor:middle}
+.strainName {font-size:6px}
+
+.specArc{stroke:white; stroke-opacity:0.5; opacity:0.6}
+
+.ribbon {opacity:0.45}
+.ribbon--active{fill:blue}
+.fusion {fill:#d5beed}
+.paralog {fill:cyan}
+
+.label--active {fill:black; opacity:1}
+.link-extension--active {stroke:magenta; stroke-dasharray:3,2}
+.link--active {stroke:magenta !important; stroke-width:2.2px}
+
+#lgSup { position:absolute; top:275px; left:50px; font-size:13px}
+
+#repTitle{ font-size:16px; font-weight:bold; margin-top:17px; margin-left:50px}
+#repNote { font-size:13px; margin:32px 0 0 28px; width:200px; line-height:23px}
+
+.opacity65{ opacity:0.65 }
+
+/*#tabReplicon .firstRow { padding-bottom:6px }
+#tabReplicon :not(.firstRow){padding-bottom:0; padding-top:0}*/
+#replicon_tbl svg, #treeRep svg {background-color:#e2e2e2}
+
+#suggestion {
+    position:absolute;
+    top:82px;
+    padding-top:5px;
+    padding-bottom:5px;
+    background-color:#f1f1f1;
+	box-shadow:1px 1px 2px rgba(0, 0, 0, 0.4);
+    z-index:400
+}
+#suggestion p { margin:0; line-height:21px; padding-left:12px; padding-right:12px }
+#suggestion p:hover { background-color:#c5cffb }
+
+
+#tabOspc { padding-right:0}
+#tabOspc>table td {padding:0 }
+
+#ospcTree circle { stroke-width:1.5px; opacity:0.8 }
+#ospcTree text {fill:#b3b3b3; font-size:11px}
+.ospcLink {
+  fill:none;
+  stroke:#ccc;
+  stroke-width:1.5px
+}
+
+#ospSearch { position:absolute; left:30px; top:15px }
+#ospSearch .search { width:160px}
+#ospSearch input { width:135px }
+
+#ospc_blast, #ospLegend { width:333px; margin-right:7px; margin-top:2px }
+#ospc_blast, #ospLegend>div { padding:7px 5px 1px 8px }
+##ospLegend { padding:0; margin:0  }
+#ospLegend>div { border:darkgray thin solid; width:100% }
+#ospInf { margin-top:16px }
+#lgOspSpc { margin-top:14px }
+#lgOspSpc svg {margin-left:21px}
+
+#ospc_blast p { margin:2px 2px 6px 2px }
+#lgOspSpc p { margin:2px 2px 8px 2px }
+#ospSeq { width:324px }
+#ospInf p { margin-bottom:8px; margin-top:1px }
+#ospName {font-weight:bold; font-size:14px; background-color:yellow}
+#lgOspArea { margin-top:8px; padding-left:52px }
+#lgOspSpc svg { padding-left:6px}
+#rect_sp { width:288px; fill:none; stroke:gray; stroke-width:1.3px }
+
+#ospInf table { width:100% }
+#ospInf td, #ospInf th {
+    padding-left:1px; padding-right:1px;
+    font-size:11px;
+    text-align:center; vertical-align:middle
+}
+#ospInf td { padding-top:0; padding-bottom:0 }
+#ospInf th { padding-top:3px; padding-bottom:3px }
+#ospInf td:nth-of-type(1), #ospInf td:nth-of-type(2), #ospInf td:nth-of-type(6){ font-size:24px }
+
+#collapse { background:#eee; cursor:pointer }
+#collapse:disabled { opacity:0.65; cursor:not-allowed }
+
+#ospSubmit { margin-left:60px}
+#newsOspBlast { top:16px; left:755px }
+#ospCredit { text-align:center; line-height:22px; margin-top:25px }
+#rectHL {fill:yellow}
+
+.search {
+    position:relative;
+    font-size:13px
+}
+.search input {text-indent:20px}
+
+.fa-search {position:absolute; top:4px; left:5px}
+#tabParalog .fa-search {top:2px}
+
+#tabParalog .firstRow td {padding-bottom:7px}
+#tabParalog .step {text-align:right; padding-right:5px}
